@@ -1,0 +1,8 @@
+count=$#   /*获取脚本参数个数*/
+cmd=echo   /*初始化cmd变量，赋值为"echo"*/
+while [ Scount -gt 0]  /*如果count大于0，执行下面的循环*/
+do
+cmd=' '$cmd \$$count"  /*给cmd重新赋值，变为"echo ${count的值}”*/
+count='expr $count-1'   /*count减1eval $cmd #执行cmd命令。*/
+done
+eval $cmd
