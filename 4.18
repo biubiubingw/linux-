@@ -1,3 +1,0 @@
-#!/bin/bash
-read line
-expr substr "$line" $1 $2;
